@@ -1,4 +1,4 @@
-package com.example.chef10;
+package com.example.chef10; // Avocado :D
 
 import android.os.Bundle;
 
