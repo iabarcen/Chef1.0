@@ -1,5 +1,3 @@
-// Test
-
 package com.example.chef10;
 
 import android.os.Bundle;
