@@ -1,5 +1,6 @@
 package com.example.chef10;
 // Test 2.0
+import android.media.Image;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -12,8 +13,11 @@ import android.view.View;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView; //ME
+import android.graphics.Color; //ME
 
 public class MainActivity extends AppCompatActivity {
+    ImageView imageView1; //ME
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +34,11 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        imageView1 = findViewById(R.id.image_view1);
+        imageView1.setBackgroundColor(Color.rgb(225, 200,100));
+
+
     }
 
     @Override
@@ -53,4 +62,10 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
+
+
+
+
 }

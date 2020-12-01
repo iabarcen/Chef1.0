@@ -8,8 +8,11 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
+import android.widget.ImageView; //ME
+import android.graphics.Color; //ME
 
 public class SecondFragment extends Fragment {
+    ImageView imageView2; //ME
 
     @Override
     public View onCreateView(
@@ -18,6 +21,7 @@ public class SecondFragment extends Fragment {
     ) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_second, container, false);
+
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
