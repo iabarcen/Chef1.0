@@ -7,17 +7,27 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+
+//import android.widget.SearchView;
+
+import java.util.ArrayList;
+
+//Image
 import android.widget.ImageView; //ME
 import android.graphics.Color; //ME
 
+
 public class MainActivity extends AppCompatActivity {
     ImageView imageView1; //ME
+    ArrayAdapter<String> arrayAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,15 +48,10 @@ public class MainActivity extends AppCompatActivity {
         imageView1 = findViewById(R.id.image_view1);
         imageView1.setBackgroundColor(Color.rgb(225, 200,100));
 
-
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
+
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
