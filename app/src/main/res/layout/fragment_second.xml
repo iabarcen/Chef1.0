@@ -6,14 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:visibility="visible"
+    android:orientation="vertical"
     tools:context=".SecondFragment"
     tools:visibility="visible">
 
 
     <Button
         android:id="@+id/button_second"
-        android:layout_width="148dp"
-        android:layout_height="57dp"
+        android:layout_width="235dp"
+        android:layout_height="90dp"
         android:layout_marginBottom="352dp"
         android:text="@string/previous"
         android:visibility="visible"
@@ -27,7 +28,8 @@
     <ImageView
         android:id="@+id/image_view2"
         android:layout_width="match_parent"
-        android:layout_height="369dp"
-        android:layout_weight="1" />
+        android:layout_height="827dp"
+        android:layout_weight="1"
+        android:background="#BD2929" />
 
 </LinearLayout>
