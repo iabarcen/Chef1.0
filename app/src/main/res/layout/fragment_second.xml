@@ -27,8 +27,8 @@
 
     <ImageView
         android:id="@+id/image_view2"
-        android:layout_width="match_parent"
-        android:layout_height="827dp"
+        android:layout_width="362dp"
+        android:layout_height="293dp"
         android:layout_weight="1"
         android:background="#BD2929" />
 

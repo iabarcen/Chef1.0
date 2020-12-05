@@ -1,18 +1,16 @@
 package com.example.chef10;
 // Test 2.0
-import android.media.Image;
+//import android.media.Image;
 import android.os.Bundle;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.SearchView;
-import androidx.appcompat.widget.SearchView.OnQueryTextListener;
+//import androidx.appcompat.widget.SearchView;
+//import androidx.appcompat.widget.SearchView.OnQueryTextListener;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.view.MenuItemCompat;
+//import androidx.core.view.MenuItemCompat;
 
-import android.view.MenuInflater;
+//import android.view.MenuInflater;
 import android.view.View;
 
 import android.view.Menu;
@@ -20,7 +18,7 @@ import android.view.MenuItem;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 
-//import android.widget.SearchView;
+import android.widget.SearchView;
 
 import java.util.ArrayList;
 
@@ -33,7 +31,7 @@ import android.widget.Toast;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
-    ImageView imageView1; //ME
+    //ImageView imageView1; //ME
 
     //Initialize variable
     ListView listView;
@@ -47,17 +45,17 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+//        FloatingActionButton fab = findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//            }
+//        });
 
-        imageView1 = findViewById(R.id.image_view1);
-        imageView1.setBackgroundColor(Color.rgb(225, 200, 100));
+        //imageView1 = findViewById(R.id.image_view1);
+        //imageView1.setBackgroundColor(Color.rgb(225, 200, 100));
 
 
         //SEARCH BAR
@@ -89,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
         MenuItem menuItem = menu.findItem(R.id.search_view);
 
        //SearchView searchView = (SearchView) MenuItemCompat.getActionView(menuItem);
-        SearchView searchView = (SearchView) menuItem.getActionView();
+        SearchView searchView = (SearchView) menuItem.getActionView(); //THIS is not working
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener(){
             @Override
@@ -106,30 +104,6 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onCreateOptionsMenu(menu);
     }
-
-
-
-
-
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
-
-
-
 
 
 }
